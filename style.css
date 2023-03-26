@@ -1,0 +1,106 @@
+/* Réinitialise les marges, les paddings et utilise la boîte à marges border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0a192f;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Définit une variable CSS --green dans le root */
+:root {
+    --green: #64ffda;
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+html,
+body {
+    overflow-x:hidden;
+    }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: var(--green);
+  outline: 1px solid slategrey;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar{
+    background: transparent;
+}
+
+.logo {
+    font-size: 25px;
+    text-decoration: none;
+    background: transparent;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    background: transparent;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    max-width: 100%;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--green);
+}
+
+
+/* Style des sections */
+section {
+    border: solid yellow 2px;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style des titres de section */
+section h2 {
+    border: solid green 2px;
+    margin-top: 0.5em;
+    font-size: 36px;
+    margin-bottom: 20px;
+    max-width: 170px;
+    display: flex;
+    margin: 10px auto;
+}
+
+/* Style des paragraphes de section */
+
+section p {
+    border: solid red 1px;
+    font-size: 20px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
