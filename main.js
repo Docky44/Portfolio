@@ -1,3 +1,11 @@
+const typed = new Typed(".multiple-text", {
+    strings : ["Etudiant", "Développeur"],
+    typeSpeed : 100,
+    backSpeed : 100,
+    backDelay: 1000,
+    loop : true
+});
+
 const menuToggle = document.querySelector('#menuToggle');
 const navbar = document.querySelector('.navbar');
 const navLinks = document.querySelectorAll('.navbar a');
