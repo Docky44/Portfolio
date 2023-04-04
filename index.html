@@ -24,7 +24,7 @@
     <!-- On crée la navbar en utilisant la balise nav -->
     <nav class="navbar">
         <a href="#a_propos" style="--i:1;" class="expand">A propos</a>
-        <a href="#section2" style="--i:2;">Expérience</a>
+        <a href="#experience" style="--i:2;">Expérience</a>
         <a href="#section3" style="--i:3;">Projet</a>
         <a href="#section4" style="--i:4;">Veille</a>
     </nav>
@@ -50,8 +50,6 @@
     </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="main.js"></script>
 <main>
     <!-- On crée les sections de la page -->
     <section id="a_propos" class="section_a_propos">
@@ -162,12 +160,68 @@
         </div>
     </section>
 
-    <section id="section2">
-        <h2>Expérience</h2>
-        <p>Contenu de la section 2</p>
-    </section>
+    <section id="experience" class="timeline">
 
-    <section id="section3">
+        <div class="box-timeline">
+
+            <div class="ligne"></div>
+
+            <div class="rond r1" data-anim="1"><span>2023</span></div>
+            <div class="rond r2" data-anim="2"><span>2023</span></div>
+            <div class="rond r3" data-anim="3"><span>2023</span></div>
+            <div class="rond r4" data-anim="4"><span>2023</span></div>
+
+
+            <div class="box b1" data-anim="1">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi maxime doloremque tempora
+                    exercitationem, minima eos impedit odit quia culpa voluptatum harum unde repellat commodi?
+                </p>
+                <a href="https://github.com/Docky44" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="box b2" data-anim="2">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi maxime doloremque tempora
+                    exercitationem, minima eos impedit odit quia culpa voluptatum harum unde repellat commodi?
+                </p>
+                <a href="#" class="btn">Lorem Ipsum</a>
+            </div>
+            <div class="box b3" data-anim="3">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi maxime doloremque tempora
+                    exercitationem, minima eos impedit odit quia culpa voluptatum harum unde repellat commodi?
+                </p>
+                <a href="#" class="btn">Lorem Ipsum</a>
+            </div>
+            <div class="box b4" data-anim="4">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi maxime doloremque tempora
+                    exercitationem, minima eos impedit odit quia culpa voluptatum harum unde repellat commodi?
+                </p>
+                <a href="#" class="btn">Lorem Ipsum</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+            integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
+            integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js"
+            integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+            integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="main.js"></script>
+
+    <section id="section3" class="projet">
         <h2>Projet</h2>
         <p>Contenu de la section 3</p>
     </section>
