@@ -290,7 +290,7 @@ body::-webkit-scrollbar-thumb {
 /* Style des sections */
 section {
     color: #fff;
-    max-height: 1500px;
+    max-height: 2500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,9 +298,7 @@ section {
 
 /* Style des titres de section */
 section h2 {
-    margin-top: 0.5em;
     font-size: 36px;
-    margin-bottom: 20px;
     max-width: 170px;
     display: flex;
     margin: 10px auto;
@@ -544,19 +542,35 @@ ul.competence_list li span {
     border: solid grey 5px;
 }
 
+.titre-box1{
+    border: #64ffda solid 2px;
+    display: flex;
+    margin: 5px auto;
+    width: 100vh;
+    height: auto;
+}
+
+img{
+    width:300px;
+    height: 200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .box-timeline {
 
     background: transparent;
     border: solid red 2px;
     width: 100%;
-    height: 1500px;
+    height: 2500px;
     display: flex;
     margin: auto;
     position: relative;
 }
 
 .ligne {
-    height: 1000px;
+    height: 2000px;
     width: 8px;
     margin: 0 auto;
     background: var(--green);
@@ -578,9 +592,9 @@ ul.competence_list li span {
 }
 /* 1000 - 160 + 80 / 3 =~ 306 */
 .r1{top: 80px;}
-.r2{top: 386px;}
-.r3{top: 692px;}
-.r4{top: 1000px;}
+.r2{top: 696px;}
+.r3{top: 1312px;}
+.r4{top: 1928px;}
 
 .rond span{
     font-size: 30px;
@@ -606,15 +620,15 @@ ul.competence_list li span {
     left: calc(50% - 270px);
 }
 .b2 {
-    top: 386px;
+    top: 696px;
     left: calc(50% + 270px);
 }
 .b3 {
-    top: 692px;
+    top: 1312px;
     left: calc(50% - 270px);
 }
 .b4 {
-    top: 1000px;
+    top: 1928px;
     left: calc(50% + 270px);
 }
 
