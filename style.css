@@ -339,11 +339,11 @@ section p {
 }
 
 .card_competence {
+    border: solid red 2px;
     background: transparent;
     display: flex;
     perspective: 10px;
     transition: all 1.3s ease-out;
-    max-width: 0;
     margin-bottom: 50px;
     justify-content: center;
 }
@@ -543,23 +543,21 @@ ul.competence_list li span {
 }
 
 .titre-box1{
-    border: #64ffda solid 2px;
     display: flex;
-    margin: 5px auto;
+    margin: 20px auto;
     width: 100vh;
     height: auto;
 }
 
-img{
-    width:300px;
-    height: 200px;
+.image_epsi{
+    background: transparent;
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .box-timeline {
-
     background: transparent;
     border: solid red 2px;
     width: 100%;
@@ -597,7 +595,7 @@ img{
 .r4{top: 1928px;}
 
 .rond span{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     background: transparent;
 }
@@ -606,7 +604,6 @@ img{
     color: #333;
     width: 400px;
     min-height: 200px;
-    padding: 20px;
     border-radius: 10px;
     height: auto;
     box-shadow: 0 0 2px 2px var(--green);
@@ -633,9 +630,32 @@ img{
 }
 
 .box p {
+    text-align: center;
     line-height: 20px;
     font-size: 18px;
     margin: 10px 0 20px 0;
+}
+
+.github_epsi {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--green);
+    text-decoration: none;
+    margin: 20px 20px;
+    transition: .5s ease;
+}
+
+.github_epsi:hover {
+    color: #0a192f;
+    box-shadow: 0 0 20px var(--green);
 }
 
 @media (max-width: 768px) {
