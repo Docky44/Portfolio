@@ -339,9 +339,9 @@ section p {
 }
 
 .card_competence {
-    border: solid red 2px;
     background: transparent;
     display: flex;
+    max-width: 1px;
     perspective: 10px;
     transition: all 1.3s ease-out;
     margin-bottom: 50px;
@@ -352,7 +352,7 @@ section p {
     display: flex;
     padding: 3rem 3rem;
     perspective: 1000px;
-    max-width: 100%;
+    max-width: 200vh;
     transition: all 1.3s ease-in;
 }
 
