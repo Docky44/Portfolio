@@ -313,18 +313,22 @@ section p {
     justify-content: center;
     align-items: center;
 }
+section a{
+  color:  var(--green);
+  text-decoration: none;
+  margin: 0;
+}
 
 .section_a_propos {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .section1_content {
-    max-height: 600px;
     margin: auto;
     position: relative;
     justify-content: center;
@@ -338,13 +342,17 @@ section p {
     align-items: center;
 }
 
+.section1_content .text-a-propos{
+    display: inline-block;
+}
+
 .card_competence {
     background: transparent;
     display: flex;
     max-width: 1px;
     perspective: 10px;
     transition: all 1.3s ease-out;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
     justify-content: center;
 }
 
@@ -594,14 +602,17 @@ ul.competence_list li span {
     min-width: 100%;
 }
 
-.titre-box1{
+.titre-box{
     display: flex;
     margin: 20px auto;
-    width: 100vh;
+    max-width: 100vh;
     height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.image_epsi{
+.image-box{
     background: transparent;
     border-radius: 10px;
     width: 400px;
@@ -684,7 +695,21 @@ ul.competence_list li span {
     text-align: center;
     line-height: 20px;
     font-size: 18px;
-    margin: 10px 0 20px 0;
+    margin: 10px 10px;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px 10px;
+    background: var(--green);
+    border-radius: 40px;
+    box-shadow: 0 0 10px var(--green);
+    font-size: 16px;
+    color: #0a192f;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .github_epsi {
@@ -722,11 +747,15 @@ ul.competence_list li span {
         width: 65%;
     }
 
-    .image_epsi{
+    .image-box{
         left: calc(50% - 50px);
         width: 100%;
         height: 100%
     }
+
+   .btn-box{
+        padding: 5px 10px;
+   }
 }
 @media (max-width: 770px) {
     .ligne {
@@ -742,11 +771,14 @@ ul.competence_list li span {
         margin-left: 55px;
     }
 
-    .image_epsi{
+    .image-box{
         left: calc(50% - 50px);
         width: 100%;
         height: 100%
     }
+    .btn-box{
+            padding: 5px 10px;
+       }
 }
 
 .projet {
@@ -1041,6 +1073,10 @@ ul.competence_list li span {
 .footer-icons a:hover {
     color: #0a192f;
     box-shadow: 0 0 20px var(--green);
+}
+
+.titre-footer{
+    text-decoration: none;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
