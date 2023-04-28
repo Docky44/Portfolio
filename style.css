@@ -816,7 +816,7 @@ ul.competence_list_mobile li span {
     border-radius: 24px;
 }
 
-.projet .bxl-github {
+.projet a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -830,6 +830,11 @@ ul.competence_list_mobile li span {
     text-decoration: none;
     transition: .5s ease;
     transform: translate(380%, 80%);
+}
+
+.projet a:hover {
+    color: #0a192f;
+    box-shadow: 0 0 20px var(--green);
 }
 
 /*STYLE DU FOOTER*/
@@ -1140,7 +1145,7 @@ ul.competence_list_mobile li span {
 
 ) {
     .card {
-        margin: 20% auto;
+        margin: 30% auto 20% auto;
         width: 90%;
         text-align: center;
         flex-direction: column;
@@ -1163,7 +1168,7 @@ ul.competence_list_mobile li span {
         transform: translate(-10%, 80%);
     }
 
-    .projet .bxl-github {
+    .projet a {
         transform: translate(-10%, 80%);
     }
 
