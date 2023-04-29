@@ -830,21 +830,6 @@ ul.competence_list_mobile li span {
     transform: translate(0, 20%);
 }
 
-/*STYLE DES BOUTONS DES CARDS DE LA SECTION3*/
-.bouton-card {
-    display: inline-block;
-    padding: 12px 28px;
-    background: var(--green);
-    border-radius: 40px;
-    box-shadow: 0 0 10px var(--green);
-    font-size: 16px;
-    color: #0a192f;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    transform: translate(50%, 80%);
-}
-
 /*STYLE DE LA CARD AVEC PHOTOS A GAUCHE DE LA SECTION3*/
 .card-droit {
     margin: 20px auto;
@@ -1202,14 +1187,6 @@ ul.competence_list_mobile li span {
         display: flex;
         margin: 5px auto;
         font-size: 26px;
-    }
-
-    .bouton-card {
-        transform: translate(-10%, 80%);
-    }
-
-    .projet a {
-        transform: translate(-10%, 80%);
     }
 
     .image-card-gauche {
