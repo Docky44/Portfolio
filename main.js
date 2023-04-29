@@ -63,3 +63,43 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
     document.title = doctitle;
 });
+
+let togg2 = document.getElementById("togg2");
+let d1 = document.getElementById("d1");
+let d2 = document.getElementById("d2");
+let d3 = document.getElementById("d3");
+togg2.addEventListener("click", () => {
+    if(getComputedStyle(d1).display != "none"){
+        d1.style.display = "none";
+    } else {
+        d1.style.display = "flex";
+    }
+})
+togg2.addEventListener("click", () => {
+    if(getComputedStyle(d2).display != "none"){
+        d2.style.display = "none";
+    } else {
+        d2.style.display = "flex";
+    }
+})
+togg2.addEventListener("click", () => {
+    if(getComputedStyle(d3).display != "none"){
+        d3.style.display = "none";
+    } else {
+        d3.style.display = "flex";
+    }
+})
+
+function changeText(){
+    let element = document.getElementById("togg2");
+    if (element.value=="Voir plus")
+        element.value = "Voir moins";
+    else
+        element.value = "Voir plus";
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    window.onscroll = function(ev) {
+        document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+    };
+});

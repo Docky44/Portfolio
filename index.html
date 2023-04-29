@@ -2,16 +2,17 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Portfolio Simon PIERRE</title>
     <!-- On ajoute le lien vers le fichier CSS qui contiendra le style de la navbar -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-<header class="header">
+<div><a class="cInvisible" href="#haut" id="cRetour"></a></div>
+<header class="header" id="haut">
     <a class="logo">Simon PIERRE</a>
 
     <div id="menuToggle">
@@ -23,7 +24,7 @@
 
     <!-- On crée la navbar en utilisant la balise nav -->
     <nav class="navbar">
-        <a href="#a_propos" style="--i:1;" class="expand">A propos</a>
+        <a class="expand" href="#a_propos" style="--i:1;">A propos</a>
         <a href="#experience" style="--i:2;">Expérience</a>
         <a href="#section3" style="--i:3;">Projet</a>
     </nav>
@@ -36,20 +37,20 @@
         <p>« Les meilleures choses qui arrivent dans le monde de l'entreprise ne sont pas le résultat du travail d'un
             seul homme. C'est le travail de toute une équipe. », Steve Jobs.</p>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/simon-pierre/" target="_blank" style="--i:5;"><i
+            <a href="https://www.linkedin.com/in/simon-pierre/" style="--i:5;" target="_blank"><i
                     class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/Docky44" target="_blank" style="--i:6;"><i class='bx bxl-github'></i></a>
+            <a href="https://github.com/Docky44" style="--i:6;" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
-        <a href="document/Cv_simon_PIERRE.pdf" download="Cv_simon_PIERRE.pdf" class="btn"> Download CV</a>
+        <a class="btn" download="Cv_simon_PIERRE.pdf" href="document/Cv_simon_PIERRE.pdf"> Download CV</a>
     </div>
     <div class="home-img">
-        <img src="" alt="">
+        <img alt="" src="">
     </div>
 </section>
 
 <main>
     <!-- On crée les sections de la page -->
-    <section id="a_propos" class="section_a_propos">
+    <section class="section_a_propos" id="a_propos">
         <div class="section1_content">
             <h2 class="titre_a_propos">A propos</h2>
             <p class="text-a-propos">Actuellement étudiant en BTS SIO option SLAM chez <a
@@ -184,7 +185,7 @@
         </div>
     </section>
 
-    <section id="experience" class="timeline">
+    <section class="timeline" id="experience">
         <h2 class="titre-timeline">Mes Expériences</h2>
         <div class="box-timeline">
 
@@ -197,8 +198,8 @@
 
 
             <div class="box b1" data-anim="1">
-                <img class="image-box" src="image/Banniere_epsi.png" alt="Banniére_école_EPSI_WIS" width="1000"
-                     height="400">
+                <img alt="Banniére_école_EPSI_WIS" class="image-box" height="400" src="image/Banniere_epsi.png"
+                     width="1000">
                 <h2 class="titre-box">EPSI/WIS</h2>
                 <p>
                     Je suis actuellement en 2éme année de BTS SIO option SLAM. Je suis passionné par le développement de
@@ -207,33 +208,33 @@
                 </p>
             </div>
             <div class="box b2" data-anim="2">
-                <img class="image-box" src="image/Banniere_goodfloow.jpg" alt="Banniére_entreprise_GoodFloow"
-                     width="768"
-                     height="256">
+                <img alt="Banniére_entreprise_GoodFloow" class="image-box" height="256"
+                     src="image/Banniere_goodfloow.jpg"
+                     width="768">
                 <h2 class="titre-box">GoodFloow</h2>
                 <p>
                     Au cours de ce stage de 5 semaines, j'ai approfondi mes compétences dans les langages HTML/CSS et
                     PHP. Pendant celui-ci j'ai fait une documentation et j'ai aussi réalisé des améliorations sur le
                     code en ajoutant certaines fonctionnalités.
                 </p>
-                <a href="https://www.goodfloow.com/" target="_blank" class="btn-box">Voir le site</a>
+                <a class="btn-box" href="https://www.goodfloow.com/" target="_blank">Voir le site</a>
             </div>
             <div class="box b3" data-anim="3">
-                <img class="image-box" src="image/Banniere_la_tete_dans_la_toile.png"
-                     alt="Banniére_entreprise_La_tete_dans_la_toile" width="1000"
-                     height="400">
+                <img alt="Banniére_entreprise_La_tete_dans_la_toile" class="image-box"
+                     height="400" src="image/Banniere_la_tete_dans_la_toile.png"
+                     width="1000">
                 <h2 class="titre-box">La tête dans la toile</h2>
                 <p>
                     A travers ce stage, de 5 semaines, j'ai approfondi et développé des compétences dans les langages
                     HTML/CSS, PHP et aussi dans la relation client via des documentations ou encore des rendez-vous.
                     J'ai réalisé un thème WordPress pour réaliser le site d'un client (Yvan Alexandre).
                 </p>
-                <a href="https://www.cieyvannalexandre.com/" target="_blank" class="btn-box">Voir le site</a>
+                <a class="btn-box" href="https://www.cieyvannalexandre.com/" target="_blank">Voir le site</a>
             </div>
             <div class="box b4" data-anim="4">
-                <img class="image-box" src="image/Banniere_aristid_briand.jpg"
-                     alt="Banniére_lycee_aristid_briand" width="340"
-                     height="148">
+                <img alt="Banniére_lycee_aristid_briand" class="image-box"
+                     height="148" src="image/Banniere_aristid_briand.jpg"
+                     width="340">
                 <h2 class="titre-box">Lycée Aristid Briand</h2>
                 <p>
                     Obtention du baccalauréat technologique option STL (Science Technologie de Laboratoire).
@@ -241,27 +242,27 @@
             </div>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    <script crossorigin="anonymous"
             integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
+            referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script crossorigin="anonymous"
             integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js"
+            referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+    <script crossorigin="anonymous"
             integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+            referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js"></script>
+    <script crossorigin="anonymous"
             integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="main.js"></script>
 
-    <section id="section3" class="projet">
+
+    <section class="projet" id="section3">
         <h2 class="titre-projet">Mes projets</h2>
         <div class="card">
-            <img class="image-card-gauche" src="image/Banniere_epsi.png"/>
+            <img class="image-card-gauche" src="image/Image-card-python.jpg" height="427" width="640"/>
             <div>
-                <h2 class="titre-principal-card">Projet de fin de module Python</h2>
+                <h2 class="titre-principal-card">Projet de Python</h2>
                 <h3 class="titre-card">Script permettant de chiffrer ou déchiffrer un fichier .txt</h3>
                 <p class="text-card">
                     Pendant ce projet j'ai réalisé un script permettant de chiffrer ou déchiffrer un fichier .txt. J'ai
@@ -269,39 +270,68 @@
                     détection d'intrusion si un utilisateur a essayé de se connecter et c'est trompé 5 fois, la console
                     se ferme et affiche un message à la nouvelle ouverture.
                 </p>
-                <a href="https://github.com/Docky44/Projet-Python" target="_blank" style="--i:6;"><i
+                <a href="https://github.com/Docky44/Projet-Python" style="--i:6;" target="_blank"><i
                         class='bx bxl-github'></i></a>
             </div>
         </div>
         <div class="card-droit">
             <div>
-                <h2 class="titre-principal-card">Projet de fin de module en développement mobile</h2>
+                <h2 class="titre-principal-card">Projet de développement mobile</h2>
                 <h3 class="titre-card-droit">Création d'un jeu de marathon</h3>
                 <p class="text-card">
-                    A travers ce projet j'ai réalisé un jeu de marathon avec un système de dé réduisant la distance en
+                    A travers ce projet j'ai fait un jeu de marathon avec un système de dé réduisant la distance en
                     fonction des résultats des dés. J'ai utilisé Android studio afin de réaliser ce projet.
                 </p>
-                <a href="https://github.com/Docky44/Marathon" target="_blank" style="--i:6;"><i
+                <a href="https://github.com/Docky44/Marathon" style="--i:6;" target="_blank"><i
                         class='bx bxl-github'></i></a>
             </div>
-            <img class="image-card-droite" src="image/Banniere_epsi.png"/>
+            <img class="image-card-droite" src="image/Image-card-java.jpg" width="640" height="960"/>
         </div>
         <div class="card">
-            <img class="image-card-gauche" src="image/Banniere_epsi.png"/>
+            <img class="image-card-gauche" src="image/Image-card-symfony1.jpg" height="427" width="640"/>
             <div>
-                <h2 class="titre-principal-card">Projet de fin de module Symfony</h2>
+                <h2 class="titre-principal-card">Projet de Symfony</h2>
                 <h3 class="titre-card">Création d'une gestion de chatons</h3>
                 <p class="text-card">
-                    Lors de ce projet, j'ai réalisé un système permettant de créer, supprimer ou modifier des catégories et
+                    Lors de ce projet, j'ai crée un système, en Symfony, permettant de créer, supprimer ou modifier des catégories
+                    et
                     des chatons avec une gestion des
                     propriétaires des chatons en many to many.
                 </p>
-                <a href="https://github.com/Docky44/symfonyChatonBDD" target="_blank" style="--i:6;"><i
+                <a href="https://github.com/Docky44/symfonyChatonBDD" style="--i:6;" target="_blank"><i
                         class='bx bxl-github'></i></a>
             </div>
         </div>
-    </section>
+        <div class="card-droit" id="d1" style="--i:1">
+            <div>
+                <h2 class="titre-principal-card">Projet de Symfony en groupe</h2>
+                <h3 class="titre-card">Création d'une gestion d'un zoo</h3>
+                <p class="text-card">
+                    Ce projet doit permettre de créer, d’ajouter et de supprimer les espaces, les enclos et les animaux,
+                    en respectant et vérifiant les règles métier énoncées dans un cahier des charges. Tout cela en
+                    groupe de 2, en utilisant le framework "Symfony".
+                </p>
+                <a href="https://github.com/QuentinVdr/ZooSymfony" style="--i:6;" target="_blank"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+            <img class="image-card-droite" src="image/Image-card-symfony2.jpg" width="640" height="960"/>
+        </div>
 
+        <div class="card" id="d2" style="--i:2">
+            <img class="image-card-gauche" src="image/Image-card-portfolio.jpg" height="427" width="640"/>
+            <div>
+                <h2 class="titre-principal-card">Projet pour le BTS SIO option SLAM</h2>
+                <h3 class="titre-card">Création d'un portfolio</h3>
+                <p class="text-card">
+                    Voici mon dernier projet, il s'agit de mon portfolio. Je l'ai fait en HTML, CSS et JS.
+                </p>
+                <a href="https://github.com/Docky44/Portfolio" style="--i:6;" target="_blank"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+        </div>
+        <input id="togg2" onclick="changeText()" type="button" value="Voir plus">
+    </section>
+    <script src="main.js"></script>
     <!-- Le reste du contenu de la page ira ici -->
 </main>
 </body>
@@ -309,10 +339,10 @@
 
     <div class="footer-gauche">
 
-        <h3><a href="" class="titre-footer">Portfolio<span>Simon</span></a></h3>
+        <h3><a class="titre-footer" href="#haut">Portfolio<span>Simon</span></a></h3>
 
         <p class="footer-lien">
-            <a href="#a_propos" style="--i:1;" class="expand">A propos</a>
+            <a class="expand" href="#a_propos" style="--i:1;">A propos</a>
             <a href="#experience" style="--i:2;">Expérience</a>
             <a href="#section3" style="--i:3;">Projet</a>
         </p>
@@ -341,9 +371,9 @@
         </p>
 
         <div class="footer-icons">
-            <a href="https://www.linkedin.com/in/simon-pierre/" target="_blank" style="--i:5;"><i
+            <a href="https://www.linkedin.com/in/simon-pierre/" style="--i:5;" target="_blank"><i
                     class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/Docky44" target="_blank" style="--i:6;"><i class='bx bxl-github'></i></a>
+            <a href="https://github.com/Docky44" style="--i:6;" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
 
     </div>
