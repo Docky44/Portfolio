@@ -890,7 +890,7 @@ ul.competence_list_mobile li span {
     color: var(--green);
     text-decoration: none;
     transition: .5s ease;
-    transform: translate(380%, 80%);
+    margin : 10px 40%;
 }
 
 .projet a:hover {
