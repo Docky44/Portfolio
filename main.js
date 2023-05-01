@@ -55,11 +55,6 @@ allBoxes.forEach(box => {
 
 });
 
-let doctitle = document.title;
-window.addEventListener("blur", () => {
-    document.title = "reviens :(";
-});
-
 window.addEventListener("focus", () => {
     document.title = doctitle;
 });
