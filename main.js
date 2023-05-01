@@ -55,10 +55,6 @@ allBoxes.forEach(box => {
 
 });
 
-window.addEventListener("focus", () => {
-    document.title = doctitle;
-});
-
 let togg2 = document.getElementById("togg2");
 let d1 = document.getElementById("d1");
 let d2 = document.getElementById("d2");
