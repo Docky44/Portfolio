@@ -456,6 +456,10 @@ ul.competence_list_mobile {
     text-align: center;
 }
 
+.titre_competence_list_mobile{
+    opacity: 0;
+}
+
 ul.competence_list_mobile li {
     margin: 10px auto;
 }
@@ -782,6 +786,10 @@ ul.competence_list_mobile li span {
     object-fit: cover;
     margin-left: 30px;
     margin-right: -60px;
+    -webkit-margin-right: -60px;
+    -moz-margin-right: -60px;
+    -ms-margin-right: -60px;
+    -o-margin-right: -60px;
     border-radius: inherit;
     border: var(--green) 2px solid;
     box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
@@ -833,6 +841,10 @@ ul.competence_list_mobile li span {
 /*STYLE DE LA CARD AVEC PHOTOS A GAUCHE DE LA SECTION3*/
 .card-droit {
     margin: 20px auto;
+    -webkit-margin: 20px auto;
+    -moz-margin: 20px auto;
+    -ms-margin: 20px auto;
+    -o-margin: 20px auto;
     box-shadow: 0 0 2px 2px var(--green);
     display: flex;
     align-items: center;
@@ -1069,6 +1081,10 @@ ul.competence_list_mobile li span {
         width: 100%;
         height: 100%;
         backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        -moz-backdrop-filter: blur(20px);
+        -ms-backdrop-filter: blur(20px);
+        -o-backdrop-filter: blur(20px);
         opacity: 0;
         animation: slideLeft 1s ease forwards;
     }
@@ -1099,6 +1115,14 @@ ul.competence_list_mobile li span {
     ul.competence_list_mobile {
         opacity: 1;
         margin: 5% 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titre_competence_list_mobile{
+        opacity: 1;
+        display: flex;
+        margin: 5% auto;
         justify-content: center;
         align-items: center;
     }
@@ -1191,6 +1215,10 @@ ul.competence_list_mobile li span {
 
     .image-card-gauche {
         margin: -100px 0 30px 0;
+        -webkit-margin: -100px 0 30px 0;
+        -moz-margin: -100px 0 30px 0;
+        -ms-margin: -100px 0 30px 0;
+        -o-margin: -100px 0 30px 0;
         width: 100%;
         max-width: 1000px;
     }
