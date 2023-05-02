@@ -841,10 +841,6 @@ ul.competence_list_mobile li span {
 /*STYLE DE LA CARD AVEC PHOTOS A GAUCHE DE LA SECTION3*/
 .card-droit {
     margin: 20px auto;
-    -webkit-margin: 20px auto;
-    -moz-margin: 20px auto;
-    -ms-margin: 20px auto;
-    -o-margin: 20px auto;
     box-shadow: 0 0 2px 2px var(--green);
     display: flex;
     align-items: center;
@@ -1190,9 +1186,7 @@ ul.competence_list_mobile li span {
 }
 
 /*MEDIA DE LA SECTION3*/
-@media (width <= 740px
-
-) {
+@media screen and (max-width: 740px) {
     .card {
         margin: 40% auto 20% auto;
         width: 90%;
