@@ -603,7 +603,7 @@ ul.competence_list_mobile li span {
 /*STYLE DES BOX DE LA TIMELINE*/
 .box-timeline {
     width: 100%;
-    height: 2500px;
+    height: 2850px;
     display: flex;
     margin: auto;
     position: relative;
@@ -611,7 +611,7 @@ ul.competence_list_mobile li span {
 
 /*STYLE DE LA LIGNE DE LA TIMELINE*/
 .ligne {
-    height: 2000px;
+    height: 2600px;
     width: 8px;
     margin: 0 auto;
     background: var(--green);
@@ -648,6 +648,9 @@ ul.competence_list_mobile li span {
 
 .r4 {
     top: 1928px;
+}
+.r5 {
+    top: 2539px;
 }
 
 .rond span {
@@ -686,6 +689,11 @@ ul.competence_list_mobile li span {
 .b4 {
     top: 1928px;
     left: calc(50% + 270px);
+}
+
+.b5 {
+    top: 2539px;
+    left: calc(50% - 270px);
 }
 
 /*STYLE DES PARAGRAPHES DES BOX DE LA TIMELINE*/
